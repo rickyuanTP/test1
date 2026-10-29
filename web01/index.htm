@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<title>書曼的旅遊相簿</title>
+<style>
+html, body { margin: 0; padding: 0; background: #333333; }
+body { font-family: "標楷體", "DFKai-SB", serif; }
+#page { position: relative; width: 1024px; height: 768px; margin: 0 auto; background: #FFFFCC; overflow: hidden; }
+#menu { position: absolute; left: 0; top: 0; width: 150px; height: 768px; }
+#menu table { margin: 10px auto 0; }
+#menu td { text-align: center; vertical-align: middle; }
+#menu img { display: block; margin: 0 auto; border: 0; }
+#date { font-family: "新細明體", "PMingLiU", serif; font-size: 12px; font-weight: bold; color: #FF0000; line-height: 16px; }
+#marquee { position: absolute; left: 150px; top: 0; width: 874px; height: 50px; margin: 0; padding: 0; overflow: hidden; }
+#marquee marquee { display: block; width: 874px; height: 50px; line-height: 50px; margin: 0; padding: 0; font-size: 24px; font-weight: bold; color: #FF0000; }
+#content { position: absolute; left: 150px; top: 50px; width: 874px; height: 718px; border: 0; }
+</style>
+</head>
+<body>
+<audio src="music/0501.mp3" autoplay loop></audio>
+<div id="page">
+
+  <div id="menu">
+    <table border="0" cellspacing="0" cellpadding="0" width="150">
+      <tr><td><img src="images/0508.gif" width="125" height="20" alt="書曼的旅遊相簿"></td></tr>
+      <tr><td><img src="images/0507.jpg" width="120" height="120" alt="書曼"></td></tr>
+      <tr><td height="20">&nbsp;</td></tr>
+      <tr><td><img src="images/0501b.gif" width="120" height="30" alt="金門逍遙遊"
+          onmouseover="this.src='images/0501r.gif'" onmouseout="this.src='images/0501b.gif'"></td></tr>
+      <tr><td><img src="images/0502b.gif" width="120" height="30" alt="卡蹓到馬祖"
+          onmouseover="this.src='images/0502r.gif'" onmouseout="this.src='images/0502b.gif'"></td></tr>
+      <tr><td><img src="images/0503b.gif" width="120" height="30" alt="踏浪澎湖行"
+          onmouseover="this.src='images/0503r.gif'" onmouseout="this.src='images/0503b.gif'"></td></tr>
+      <tr><td><img src="images/0504b.gif" width="120" height="30" alt="綠島唱夜曲"
+          onmouseover="this.src='images/0504r.gif'" onmouseout="this.src='images/0504b.gif'"></td></tr>
+      <tr><td>
+          <a href="album5/album.htm" target="content">
+            <img src="images/0505b.gif" width="120" height="30" alt="蘭嶼賞魚去"
+              onmouseover="this.src='images/0505r.gif'" onmouseout="this.src='images/0505b.gif'">
+          </a>
+      </td></tr>
+      <tr><td height="20">&nbsp;</td></tr>
+      <tr><td id="date">日期：2026/10/29<br>維護：01○○○</td></tr>
+      <tr><td height="20">&nbsp;</td></tr>
+      <tr><td>
+          <a href="index.htm" target="_top">
+            <img src="images/0506b.gif" width="120" height="30" alt="回首頁"
+              onmouseover="this.src='images/0506r.gif'" onmouseout="this.src='images/0506b.gif'">
+          </a>
+      </td></tr>
+    </table>
+  </div>
+
+  <div id="marquee">
+    <marquee direction="left" scrollamount="4">歡迎來到書曼的旅遊相簿，本網站有我的旅遊影像紀錄介紹耶！</marquee>
+  </div>
+
+  <iframe id="content" name="content" src="main.htm" scrolling="no"></iframe>
+
+</div>
+</body>
+</html>
