@@ -1,0 +1,70 @@
+/* Shared styles for the content pages in results/ (shown inside the content iframe) */
+body {
+  margin: 0;
+  padding: 20px;
+  background-color: #FFFFFF;
+  color: #000000;
+  font-size: 14px;
+  overflow-x: hidden;
+}
+.navpath {
+  color: #FF0000;
+  font-weight: bolder;
+  margin: 0 0 12px 0;
+}
+p {
+  text-indent: 2em;
+  margin: 0 0 8px 0;
+  line-height: 1.7;
+}
+h4 {
+  color: #0000FF;
+  margin: 14px 0 6px 0;
+  font-size: 16px;
+}
+.fright {
+  float: right;
+  margin: 0 0 10px 10px;
+}
+.fcenter {
+  display: block;
+  margin: 10px auto;
+}
+/* health page tabs */
+.tabs {
+  margin: 0 0 10px 0;
+  border-bottom: 1px solid #999999;
+}
+.tabs button {
+  font-size: 14px;
+  padding: 4px 12px;
+  margin-right: 4px;
+  border: 1px solid #999999;
+  border-bottom: none;
+  background-color: #EEEEEE;
+  cursor: pointer;
+}
+.tabs button.on {
+  background-color: #FFFF00;
+  font-weight: bold;
+}
+/* message board */
+.msgtable {
+  width: 700px;
+  margin: 10px auto;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+.msgtable td {
+  border: 1px solid #DDDDDD;
+  padding: 2px;
+  vertical-align: middle;
+}
+.msgtable td.lbl {
+  width: 120px;
+  text-align: center;
+}
+.msgtable td.val {
+  width: 580px;
+  text-align: left;
+}

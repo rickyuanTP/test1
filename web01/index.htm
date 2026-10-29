@@ -2,62 +2,62 @@
 <html lang="zh-Hant">
 <head>
 <meta charset="utf-8">
-<title>書曼的旅遊相簿</title>
+<title>國立科技高中─校園社團介紹網</title>
 <style>
-html, body { margin: 0; padding: 0; background: #333333; }
-body { font-family: "標楷體", "DFKai-SB", serif; }
-#page { position: relative; width: 1024px; height: 768px; margin: 0 auto; background: #FFFFCC; overflow: hidden; }
-#menu { position: absolute; left: 0; top: 0; width: 150px; height: 768px; }
-#menu table { margin: 10px auto 0; }
-#menu td { text-align: center; vertical-align: middle; }
-#menu img { display: block; margin: 0 auto; border: 0; }
-#date { font-family: "新細明體", "PMingLiU", serif; font-size: 12px; font-weight: bold; color: #FF0000; line-height: 16px; }
-#marquee { position: absolute; left: 150px; top: 0; width: 874px; height: 50px; margin: 0; padding: 0; overflow: hidden; }
-#marquee marquee { display: block; width: 874px; height: 50px; line-height: 50px; margin: 0; padding: 0; font-size: 24px; font-weight: bold; color: #FF0000; }
-#content { position: absolute; left: 150px; top: 50px; width: 874px; height: 718px; border: 0; }
+body { margin: 0; background: #ffffff; font-family: "標楷體", "DFKai-SB", serif; font-size: 16px; color: #000000; }
+#page { width: 1024px; height: 768px; margin: 0 auto; position: relative; overflow: hidden; background: #ffffff; }
+#main { position: absolute; left: 12px; top: 0; width: 1000px; height: 768px; }
+
+/* top region: logo */
+#top { position: absolute; left: 0; top: 0; width: 1000px; height: 65px; }
+#top img { position: absolute; left: 3px; top: 2px; width: 994px; height: 60px; border: 0; }
+
+/* marquee region */
+.mq { position: absolute; left: 225px; top: 65px; width: 770px; height: 29px; line-height: 29px; font-family: "標楷體", "DFKai-SB", serif; font-size: 24px; color: #0000FF; overflow: hidden; }
+
+/* menu region */
+#menu { position: absolute; left: 0; top: 94px; width: 215px; height: 634px; }
+#menu .title { text-align: center; font-size: 24px; line-height: 32px; color: #FF00FF; text-decoration: underline; margin: 10px 0 14px 0; }
+#menu .item { display: block; width: 200px; height: 35px; line-height: 35px; margin: 0 auto 4px auto; background-image: url(images/menu1.png); background-repeat: no-repeat; background-position: center; text-align: center; font-size: 16px; font-weight: 500; color: #000000; text-decoration: none; }
+#menu a.item:hover, #menu span.item:hover { background-image: url(images/menu2.png); }
+
+/* content region (iframe) */
+#content { position: absolute; left: 225px; top: 94px; width: 770px; height: 634px; border: 0; }
+
+/* date region */
+#update { position: absolute; left: 0; top: 703px; width: 215px; height: 25px; line-height: 25px; text-align: center; font-size: 16px; color: #000000; }
+
+/* footer region */
+#footer { position: absolute; left: 225px; top: 728px; width: 770px; height: 20px; line-height: 20px; text-align: center; font-size: 16px; color: #000000; }
 </style>
 </head>
 <body>
-<audio src="music/0501.mp3" autoplay loop></audio>
 <div id="page">
+  <div id="main">
 
-  <div id="menu">
-    <table border="0" cellspacing="0" cellpadding="0" width="150">
-      <tr><td><img src="images/0508.gif" width="125" height="20" alt="書曼的旅遊相簿"></td></tr>
-      <tr><td><img src="images/0507.jpg" width="120" height="120" alt="書曼"></td></tr>
-      <tr><td height="20">&nbsp;</td></tr>
-      <tr><td><img src="images/0501b.gif" width="120" height="30" alt="金門逍遙遊"
-          onmouseover="this.src='images/0501r.gif'" onmouseout="this.src='images/0501b.gif'"></td></tr>
-      <tr><td><img src="images/0502b.gif" width="120" height="30" alt="卡蹓到馬祖"
-          onmouseover="this.src='images/0502r.gif'" onmouseout="this.src='images/0502b.gif'"></td></tr>
-      <tr><td><img src="images/0503b.gif" width="120" height="30" alt="踏浪澎湖行"
-          onmouseover="this.src='images/0503r.gif'" onmouseout="this.src='images/0503b.gif'"></td></tr>
-      <tr><td><img src="images/0504b.gif" width="120" height="30" alt="綠島唱夜曲"
-          onmouseover="this.src='images/0504r.gif'" onmouseout="this.src='images/0504b.gif'"></td></tr>
-      <tr><td>
-          <a href="album5/album.htm" target="content">
-            <img src="images/0505b.gif" width="120" height="30" alt="蘭嶼賞魚去"
-              onmouseover="this.src='images/0505r.gif'" onmouseout="this.src='images/0505b.gif'">
-          </a>
-      </td></tr>
-      <tr><td height="20">&nbsp;</td></tr>
-      <tr><td id="date">日期：2026/10/29<br>維護：01○○○</td></tr>
-      <tr><td height="20">&nbsp;</td></tr>
-      <tr><td>
-          <a href="index.htm" target="_top">
-            <img src="images/0506b.gif" width="120" height="30" alt="回首頁"
-              onmouseover="this.src='images/0506r.gif'" onmouseout="this.src='images/0506b.gif'">
-          </a>
-      </td></tr>
-    </table>
+    <div id="top">
+      <a href="index.htm" target="_top"><img src="images/logo.png" alt="國立科技高中校園社團介紹網"></a>
+    </div>
+
+    <marquee class="mq" behavior="scroll" direction="left" scrollamount="4">歡迎光臨校園社團介紹網，參觀後請支持社團活動並熱烈參與</marquee>
+
+    <div id="menu">
+      <div class="title">社團介紹</div>
+      <a class="item" href="guitar_history.htm" target="content">吉他社</a>
+      <span class="item">熱舞社</span>
+      <span class="item">棒球社</span>
+      <span class="item">羽球社</span>
+      <span class="item">足球社</span>
+      <span class="item">童軍社</span>
+    </div>
+
+    <iframe id="content" name="content" src="main.htm" title="網頁內容區"></iframe>
+
+    <div id="update">最近更新日期：2026/10/29</div>
+
+    <div id="footer">網頁設計及維護：01應檢人</div>
+
   </div>
-
-  <div id="marquee">
-    <marquee direction="left" scrollamount="4">歡迎來到書曼的旅遊相簿，本網站有我的旅遊影像紀錄介紹耶！</marquee>
-  </div>
-
-  <iframe id="content" name="content" src="main.htm" scrolling="no"></iframe>
-
 </div>
 </body>
 </html>

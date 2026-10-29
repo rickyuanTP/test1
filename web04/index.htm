@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>網路行銷購物網</title>
+<style>
+  body { margin: 0; background: #FFFFFF; font-family: "Microsoft JhengHei", sans-serif; }
+  #main { width: 1024px; height: 768px; margin: 0 auto; position: relative; overflow: hidden; background: #FFFFFF; }
+  #top { height: 120px; background: url(images/0401.jpg) repeat-x; }
+  #top h1 { margin: 0; padding-top: 25px; text-align: center; font-size: 52px; color: #FFFFFF;
+            text-shadow: #333333 10px 15px 0; }
+  #marq { height: 30px; }
+  #marq marquee { color: #0000FF; font-size: 19px; font-weight: bold; }
+  #content { height: 540px; background: url(images/0402.jpg); position: relative; }
+  #content table { position: absolute; left: 0; top: 0; border-collapse: collapse; width: 650px; }
+  #content td { width: 150px; height: 150px; text-align: center; vertical-align: middle; border: 1px solid #FFFFFF; }
+  #content td.w200 { width: 200px; }
+  #content td.w300 { width: 300px; }
+  #content img { border: 0; }
+  #content a.cat { font-size: 24px; font-weight: bold; color: #0000FF; }
+  #content iframe { position: absolute; left: 660px; top: 10px; width: 350px; height: 520px; background: #FFFFFF; border: 1px solid #666600; }
+  #footer { height: 78px; background: #666600; color: #FFFFFF; text-align: center; line-height: 2; font-size: 16px; }
+  #footer a { color: #FFFF99; }
+</style>
+</head>
+<body>
+<div id="main">
+  <div id="top">
+    <h1>網路行銷購物網</h1>
+  </div>
+
+  <div id="marq">
+    <marquee behavior="scroll" direction="left" scrollamount="4">歡迎光臨網路行銷購物網，精選流行皮件限時優惠中！</marquee>
+  </div>
+
+  <div id="content">
+    <table>
+      <tr>
+        <td><a href="results/leather1.htm" target="_blank"><img src="images/0403.jpg" width="130" height="90" alt="真皮皮包"></a></td>
+        <td class="w200"><a href="results/leather2.htm" target="_blank"><img src="images/0404.jpg" width="130" height="90" alt="真皮短夾"></a></td>
+        <td class="w300"><img src="images/0405.jpg" width="150" height="100" alt="商品"></td>
+      </tr>
+      <tr>
+        <td><img src="images/0406.jpg" width="130" height="90" alt="商品"></td>
+        <td class="w200"><a class="cat" href="results/purchase.htm" target="content">流行皮件</a></td>
+        <td class="w300"><img src="images/0407.jpg" width="150" height="100" alt="商品"></td>
+      </tr>
+      <tr>
+        <td><img src="images/0408.jpg" width="130" height="90" alt="商品"></td>
+        <td class="w200">網路行銷購物網<br>精選商品</td>
+        <td class="w300">歡迎選購</td>
+      </tr>
+    </table>
+    <iframe name="content" src="about:blank" title="內容區"></iframe>
+  </div>
+
+  <div id="footer">
+    <a href="results/message.htm" target="content">意見留言</a><br>
+    崗位 04　應檢人：應檢人　<script>
+      (function () {
+        var d = new Date();
+        var mm = (d.getMonth() + 1 < 10 ? "0" : "") + (d.getMonth() + 1);
+        var dd = (d.getDate() < 10 ? "0" : "") + d.getDate();
+        document.write("日期：" + d.getFullYear() + "/" + mm + "/" + dd);
+      })();
+    </script>
+  </div>
+</div>
+
+<audio src="music/0401.mp3" autoplay loop></audio>
+</body>
+</html>

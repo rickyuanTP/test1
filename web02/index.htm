@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<title>勞動部勞動力發展署一運動廣場連結網</title>
+<style>
+  html, body { margin: 0; padding: 0; }
+  body { background-color: #42413C; }
+  #main {
+    width: 1024px;
+    height: 768px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+  }
+  #top {
+    width: 1024px;
+    height: 90px;
+    background-color: #00B0F0;
+    position: relative;
+  }
+  #top .logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 180px;
+    height: 90px;
+    border: 0;
+  }
+  #top .title {
+    position: absolute;
+    left: 180px;
+    top: 0;
+    width: 844px;
+    height: 90px;
+  }
+  #menu {
+    width: 1024px;
+    height: 25px;
+    display: flex;
+    background-color: #EEEEEE;
+  }
+  #menu a {
+    flex: 1;
+    display: block;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    font-size: 14px;
+    color: #000000;
+    background-color: #EEEEEE;
+    text-decoration: none;
+    font-weight: normal;
+    border: 0;
+  }
+  #menu a:hover {
+    background-color: #FFFF00;
+    color: #FF0000;
+    font-weight: bold;
+  }
+  #content {
+    display: block;
+    width: 1024px;
+    height: 460px;
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+  #footer {
+    width: 1024px;
+    height: 45px;
+    background-color: #CCCCCC;
+    color: #FFFFFF;
+    font-size: 14px;
+    text-align: center;
+    line-height: 22px;
+    padding-top: 2px;
+    box-sizing: border-box;
+  }
+</style>
+</head>
+<body>
+<div id="main">
+  <div id="top">
+    <a href="index.htm"><img class="logo" src="images/logo.png" width="180" height="90" alt="運動廣場連結網-回首頁"></a>
+    <img class="title" src="images/banner.png" width="844" height="90" alt="運動廣場連結網">
+  </div>
+  <div id="menu">
+    <a href="results/main.htm" target="content">首頁</a>
+    <a href="results/health.htm" target="content">健康天地</a>
+    <a href="results/basketball.htm" target="content">籃球介紹</a>
+    <a href="results/baseball.htm" target="content">棒球介紹</a>
+    <a href="results/swimming.htm" target="content">游泳介紹</a>
+    <a href="results/msgboard.htm" target="content">訪客留言</a>
+    <a href="results/reference.htm" target="content">資料來源</a>
+  </div>
+  <iframe id="content" name="content" src="results/main.htm" scrolling="auto" title="網頁內容區"></iframe>
+  <div id="footer">
+    網頁設計及維護：02○○○<br>
+    最近更新日期：<span class="today"></span>
+  </div>
+</div>
+<script src="others/common.js"></script>
+</body>
+</html>

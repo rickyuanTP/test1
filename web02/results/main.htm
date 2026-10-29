@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>首頁 - 運動廣場連結網</title>
+<link rel="stylesheet" href="../others/content.css">
+<style>
+  .wrap { width: 870px; height: 418px; }
+  .news {
+    float: left;
+    width: 278px;
+    height: 416px;
+    border: 1px solid #999999;
+    box-sizing: content-box;
+    overflow: hidden;
+  }
+  .news .ntitle {
+    font-size: 16px;
+    font-weight: bolder;
+    text-align: left;
+    padding: 6px 8px 4px 8px;
+  }
+  .news table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .news th {
+    background-color: #3399FF;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding: 4px 2px;
+  }
+  .news td {
+    font-size: 12px;
+    line-height: 2;
+    padding: 0 3px;
+    vertical-align: middle;
+  }
+  .news tr.odd td { background-color: #FFFFCC; }
+  .news tr.even td { background-color: #DDDDDD; }
+  .news td img { width: 12px; height: 12px; vertical-align: middle; margin-right: 3px; }
+  .news td.date { text-align: center; white-space: nowrap; }
+
+  .pics {
+    float: right;
+    width: 590px;
+    height: 418px;
+    background-color: #333333;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 6px 0 0 0;
+  }
+  .pics .big {
+    display: block;
+    margin: 0 auto;
+    width: 580px;
+    height: 260px;
+    object-fit: contain;
+  }
+  .pics .caption {
+    color: #FFFF00;
+    font-size: 14px;
+    margin: 4px 0;
+    height: 20px;
+    line-height: 20px;
+  }
+  .pics .thumbs { margin-top: 4px; }
+  .pics .thumbs img {
+    width: 130px;
+    height: 80px;
+    object-fit: contain;
+    margin: 0 4px;
+    cursor: pointer;
+    border: 1px solid #DDDDDD;
+    vertical-align: top;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="news">
+    <div class="ntitle">最新消息</div>
+    <table>
+      <tr><th>主題</th><th>發布日期</th></tr>
+      <tr class="odd"><td><img src="../images/0201.png" alt="">公告全國技能競賽相關事宜</td><td class="date today"></td></tr>
+      <tr class="even"><td><img src="../images/0201.png" alt="">公告即測即評及發證相關事宜</td><td class="date today"></td></tr>
+      <tr class="odd"><td><img src="../images/0201.png" alt="">公告網頁設計修題相關事宜</td><td class="date today"></td></tr>
+      <tr class="even"><td><img src="../images/0201.png" alt="">公告網路架設應檢相關事宜</td><td class="date today"></td></tr>
+    </table>
+  </div>
+  <div class="pics">
+    <img class="big" id="bigpic" src="../images/0202A.png" alt="第30屆倫敦奧運">
+    <div class="caption" id="caption">第30屆倫敦奧運</div>
+    <div class="thumbs">
+      <img src="../images/0202B.png" alt="第30屆倫敦奧運縮圖" data-big="../images/0202A.png" data-cap="第30屆倫敦奧運">
+      <img src="../images/0203B.png" alt="許淑淨奪舉重銀牌縮圖" data-big="../images/0203A.png" data-cap="許淑淨奪舉重銀牌">
+      <img src="../images/0204B.png" alt="第26屆深圳世大運縮圖" data-big="../images/0204A.png" data-cap="第26屆深圳世大運">
+      <img src="../images/0205B.png" alt="第27屆喀山世大運縮圖" data-big="../images/0205A.png" data-cap="第27屆喀山世大運">
+    </div>
+  </div>
+</div>
+<script src="../others/common.js"></script>
+<script>
+  // Clicking a thumbnail shows its full-size picture and caption above.
+  (function () {
+    var thumbs = document.querySelectorAll('.thumbs img');
+    var big = document.getElementById('bigpic');
+    var cap = document.getElementById('caption');
+    for (var i = 0; i < thumbs.length; i++) {
+      thumbs[i].onclick = function () {
+        big.src = this.getAttribute('data-big');
+        big.alt = this.getAttribute('data-cap');
+        cap.textContent = this.getAttribute('data-cap');
+      };
+    }
+  })();
+</script>
+</body>
+</html>

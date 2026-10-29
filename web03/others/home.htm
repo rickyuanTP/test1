@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<title>網頁內容區</title>
+<style>
+  html, body { margin: 0; height: 654px; overflow: hidden; }
+  body { background: url("../images/park0301.jpg"); font-family: "標楷體", "DFKai-SB", "Kaiti TC", serif; }
+  .map { display: block; margin: 0 auto; width: 452px; height: 631px; border: 0; }
+  .source { width: 452px; margin: 0 auto; text-align: right; color: #FF00FF; font-size: 16px; }
+</style>
+</head>
+<body>
+<img class="map" src="../images/national_park.jpg" width="452" height="631" usemap="#npmap" alt="臺灣地區國家公園分佈圖">
+<div class="source">資料來源：內政部營建署『臺灣的國家公園』網站</div>
+<map name="npmap">
+  <area shape="rect" coords="215,50,340,76" href="../park/yangmingshan.htm" alt="陽明山國家公園">
+  <area shape="poly" coords="276,184,296,180,312,186,320,200,318,216,304,224,288,224,276,218,272,202" href="../park/sheipa.htm" alt="雪霸國家公園">
+</map>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>線上訂購</title>
+<style>
+  body { margin: 8px; background: #FFFFFF; font-family: "Microsoft JhengHei", sans-serif; font-size: 16px; }
+  table { border-collapse: collapse; width: 100%; background: #FFFF99; }
+  td { border: 1px solid #666600; padding: 6px; vertical-align: middle; }
+  td.lbl { width: 100px; font-weight: bold; text-align: center; }
+  td.pic { width: 150px; text-align: center; }
+  td.opt { width: 400px; }
+  img { border: 0; }
+  h2 { margin: 0 0 8px 0; color: #666600; }
+</style>
+<script>
+  function checkOrder() {
+    var f = document.forms.buy;
+    var item = null;
+    for (var i = 0; i < f.item.length; i++) { if (f.item[i].checked) item = f.item[i].value; }
+    var pay = null;
+    for (var j = 0; j < f.pay.length; j++) { if (f.pay[j].checked) pay = f.pay[j].value; }
+    if (item === null) { alert("請選擇商品"); return; }
+    if (pay === null) { alert("請選擇付款方式"); return; }
+    var msg = "請確認您的訂購內容：\n\n"
+            + "商品選擇：\n"
+            + "1. 真皮皮包（NT$1200）\n"
+            + "2. 真皮短夾（NT$800）\n\n"
+            + "您選擇的商品：" + item + "\n"
+            + "付款方式：" + pay + "\n\n"
+            + "確定送出訂單？";
+    if (confirm(msg)) {
+      alert("訂購完成，謝謝您的光臨！");
+    }
+  }
+</script>
+</head>
+<body>
+<h2>線上訂購</h2>
+<form name="buy" action="#" onsubmit="return false;">
+  <table>
+    <tr>
+      <td class="lbl" rowspan="2">商品選擇</td>
+      <td class="pic"><img src="../images/0403.jpg" width="150" height="100" alt="真皮皮包"></td>
+      <td class="opt"><label><input type="radio" name="item" value="真皮皮包" checked> 真皮皮包　NT$1200</label></td>
+    </tr>
+    <tr>
+      <td class="pic"><img src="../images/0404.jpg" width="150" height="100" alt="真皮短夾"></td>
+      <td class="opt"><label><input type="radio" name="item" value="真皮短夾"> 真皮短夾　NT$800</label></td>
+    </tr>
+    <tr>
+      <td class="lbl">付款方式</td>
+      <td class="opt" colspan="2">
+        <label><input type="radio" name="pay" value="信用卡" checked> 信用卡</label>
+        <label><input type="radio" name="pay" value="貨到付款"> 貨到付款</label>
+        <label><input type="radio" name="pay" value="ATM 轉帳"> ATM 轉帳</label>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3" style="text-align:center;">
+        <input type="button" value="送出訂單" onclick="checkOrder()">
+        <input type="reset" value="重新填寫">
+      </td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>

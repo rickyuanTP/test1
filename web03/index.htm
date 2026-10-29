@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<title>國家公園介紹網</title>
+<style>
+  body { margin: 0; background: #FFFFFF; font-family: "標楷體", "DFKai-SB", "Kaiti TC", serif; }
+  #main { width: 1000px; height: 768px; margin: 0 auto; overflow: hidden; position: relative; }
+  #top { height: 65px; background: #0000FF; text-align: center; }
+  #top a { display: inline-block; margin-top: 2px; }
+  #top img { display: block; margin: 0 auto; }
+  #marquee { height: 29px; background: #FFFFFF; overflow: hidden; font-size: 14px; }
+  #middle { display: flex; height: 654px; }
+  #menu { width: 200px; height: 654px; background: #00FFFF; box-sizing: border-box; padding-top: 10px; }
+  #menu table { margin: 0 auto; border: 0; }
+  #menu img.menu-img { display: block; transition: filter 0.3s; }
+  #menu img.menu-img:hover { filter: hue-rotate(150deg) saturate(2); }
+  #menu .dl { text-align: center; margin-top: 10px; font-size: 16px; }
+  #content { width: 800px; height: 654px; background: url("images/park0301.jpg"); }
+  #content iframe { display: block; width: 800px; height: 654px; border: 0; }
+  #footer { height: 20px; line-height: 20px; text-align: center; font-size: 16px; color: #000000; background: #FFFFFF; }
+</style>
+</head>
+<body>
+<div id="main">
+  <div id="top">
+    <a href="index.htm"><img id="banner" src="images/banner01.jpg" width="100" height="60" alt="國家公園介紹網"></a>
+  </div>
+  <div id="marquee">
+    <marquee scrollamount="4" style="width:100%;">歡迎進入國家公園介紹網，本網站有詳細的國家公園介紹哦！</marquee>
+  </div>
+  <div id="middle">
+    <div id="menu">
+      <table width="120" cellspacing="0" cellpadding="0" border="0">
+        <tr><td align="center"><a href="park/yangmingshan.htm" target="content"><img class="menu-img" src="images/park0302.jpg" width="120" height="40" alt="陽明山國家公園"></a></td></tr>
+        <tr style="height:20px"><td></td></tr>
+        <tr><td align="center"><a href="park/sheipa.htm" target="content"><img class="menu-img" src="images/park0303.jpg" width="120" height="40" alt="雪霸國家公園"></a></td></tr>
+        <tr style="height:20px"><td></td></tr>
+        <tr><td align="center"><img class="menu-img" src="images/park0304.jpg" width="120" height="40" alt="太魯閣國家公園"></td></tr>
+        <tr style="height:20px"><td></td></tr>
+        <tr><td align="center"><img class="menu-img" src="images/park0305.jpg" width="120" height="40" alt="玉山國家公園"></td></tr>
+      </table>
+      <div class="dl"><a href="music/park.mp3" download>檔案下載</a></div>
+    </div>
+    <div id="content">
+      <iframe name="content" src="others/home.htm" title="網頁內容區"></iframe>
+    </div>
+  </div>
+  <div id="footer">網頁設計及維護：03○○○、最近更新日期：2026/10/29</div>
+</div>
+<script>
+  // Title banner: swap four same-sized frames every 1000 ms in the same position.
+  (function () {
+    var frames = ["images/banner01.jpg", "images/banner02.jpg", "images/banner03.jpg", "images/banner04.jpg"];
+    var idx = 0;
+    var img = document.getElementById("banner");
+    setInterval(function () {
+      idx = (idx + 1) % frames.length;
+      img.src = frames[idx];
+    }, 1000);
+  })();
+</script>
+</body>
+</html>
